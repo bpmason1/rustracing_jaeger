@@ -124,7 +124,7 @@ impl JaegerReporter {
             service_name: service_name.to_owned(),
             tags: Vec::new(),
         };
-        let agent = SocketAddr::from(([127, 0, 0, 1], port));
+        let agent = SocketAddr::from(([10, 0, 2, 2], port));
         let mut this = JaegerReporter {
             socket,
             agent,
